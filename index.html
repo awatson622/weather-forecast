@@ -4,10 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href=".assets/style.css" />
-    <title>Document</title>
+    <title>Weather Dashboard</title>
 </head>
 <body>
-    
+    <form id="search-form">
+        <input type="text" id="city-input" placeholder="Enter city name">
+        <button type="submit">Search</button>
+    </form>
+
+    <section id="current-weather">
+        <h2>Current Weather</h2>
+        <div id="city-name"></div>
+        <div id="date"></div>
+        <div id="weather-icon"></div>
+        <div id="temperature"></div>
+        <div id="humidity"></div>
+        <div id="wind-speed"></div>
+    </section>
+
+    <section id="forecast">
+        <h2>5-Day Forecast</h2>
+        <div id="forecast-container">
+        </div>
+    </section>
+
+    <section id="search-history">
+        <h2>Search History</h2>
+        <ul id="history-list">
+        </ul>
+    </section>
+
     <script src=".assets/script.js"></script>
 </body>
 </html>
