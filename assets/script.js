@@ -1,8 +1,8 @@
 async function fetchCurrentWeather(city) {
-    const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+    var apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
     try {
-        const response = await fetch(apiUrl);
-        const data = await response.json();
+        var response = await fetch(apiUrl);
+        var data = await response.json();
         return data;
     } catch (error) {
         console.log('Error fetching current weather data:', error);
@@ -11,10 +11,10 @@ async function fetchCurrentWeather(city) {
 
 
 function fetchWeatherForecast(city) {
-    const apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=metric`;
+    var apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=metric`;
     try {
-        const response = await fetch(apiUrl);
-        const data = await response.json();
+        var response = fetch(apiUrl);
+        var data = response.json();
         return data;
     } catch (error) {
         console.log('Error fetching weather forecast data:', error);
@@ -30,7 +30,5 @@ function displayCurrentWeather(data) {
 function displayWeatherForecast(data) {
     console.log('Weather forecast data:', data);
 }
-
-const cityName = 'YOUR_CITY_NAME';
-handleCitySearch(cityName);
-
+ 
+var defaultCityName = 'New York';
