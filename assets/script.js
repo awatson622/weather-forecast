@@ -1,8 +1,8 @@
-async function fetchCurrentWeather(city) {
+function fetchCurrentWeather(city) {
     var apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
     try {
-        var response = await fetch(apiUrl);
-        var data = await response.json();
+        var response = fetch(apiUrl);
+        var data = response.json();
         return data;
     } catch (error) {
         console.log('Error fetching current weather data:', error);
