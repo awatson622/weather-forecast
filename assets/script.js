@@ -21,14 +21,32 @@ function fetchWeatherForecast(city) {
     }
 }
 
-
 function displayCurrentWeather(data) {
     console.log('Current weather data:', data);
 }
-
 
 function displayWeatherForecast(data) {
     console.log('Weather forecast data:', data);
 }
  
 var defaultCityName = 'New York';
+
+
+function handleCitySearch(cityName) {
+    fetch('https://api.openweathermap.org/data/2.5/weather?q=' + cityName + '&appid=YOUR_API_KEY')
+    .then(response => response.json())
+    .then(data => {
+        saveToLocalStorage('lastSearchedCity', cityName);
+    })
+    .catch(error => {
+        console.error('Error fetching weather data:', error);
+    });
+}
+
+function saveToLocalStorage(key, value) {
+    localStorage.setItem(key, value);
+}
+
+function getFromLocalStorage(key) {
+    return localStorage.getItem(key);
+}
