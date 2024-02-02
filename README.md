@@ -4,11 +4,11 @@ The weather forecast dashboard is a user-friendly web application designed to pr
 
 ## Table of Contents
 
-1. [Features] (#features)
+1. [Features](#features)
 2. [Usage](#usage)
-3. [TechnologiesUsed] (#technologies Used)
-4. [Installation] (#installation)
-5. [Credits] (#credits)
+3. [TechnologiesUsed](#technologies Used)
+4. [Installation](#installation)
+5. [Credits](#credits)
 
 ## Features
 City Search: Users can search for specific cities to access current weather conditions and a five-day forecast.
