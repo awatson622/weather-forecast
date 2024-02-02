@@ -6,7 +6,7 @@ The weather forecast dashboard is a user-friendly web application designed to pr
 
 1. [Features](#features)
 2. [Usage](#usage)
-3. [TechnologiesUsed](#technologies Used)
+3. [TechnologiesUsed](#technologiesused)
 4. [Installation](#installation)
 5. [Credits](#credits)
 
